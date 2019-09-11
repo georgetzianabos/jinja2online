@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 1em;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.loading {
+  flex: 1 1 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loading-text {
+  text-align: center;
+}
+
+.values-template {
+  flex: 1 1 100%;
+}
+
+.actions {
+  display: flex;
+  flex-direction: row;
+  flex: 1 1 auto;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.action {
+  flex: 0 0 auto;
+  margin-right: 1em;
+}
+
+.panel {
+  flex: 1 1 200px;
+  margin: 0 1em 1em 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-title {
+  flex: 1 1 auto;
+}
+
+.editor, .output {
+  flex: 1 1 100%;
+}
+
+.editor {
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.error {
+  color: red;
+}
+
+.output {
+  overflow: auto;
+}
+
+.output pre {
+  height: 0;
+  width: 0;
+}

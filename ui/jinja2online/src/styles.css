@@ -1,0 +1,87 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono|Crete+Round|Lato&display=swap");
+
+body {
+  background-color: #eeeae4;
+}
+
+.header {
+  background-color: #ed6e12;
+  border-bottom: 0.25em solid #d0722d;
+}
+
+.header-title {
+  color: #fff;
+  font-family: 'Crete Round', serif;
+  font-weight: 100;
+  font-size: 1.5rem;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  user-select: none;
+}
+
+.panel-title {
+  color: #c67e4a;
+  font-family: 'Lato', serif;
+  font-size: 1.0rem;
+  font-weight: normal;
+  margin-block-start: 0.25em;
+  margin-block-end: 0.25em;
+  text-transform: uppercase;
+}
+
+.editor, .output {
+  background-color: #fbfaf8;
+  border: 0.125em solid #d1cfcb;
+  border-radius: 0.25em;
+}
+
+.output pre {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.0rem;
+  line-height: 1.2em;
+  margin: 0;
+}
+
+.editor {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 1.0rem;
+  line-height: 1.2em;
+  resize: none;
+}
+
+.editor:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0.125em #faa364;
+}
+
+.action {
+  color: #fbfaf8;
+  background-color: #d0722d;
+  border-style: none;
+  border-radius: 0.5em;
+  font-family: 'Lato', serif;
+  font-weight: normal;
+  padding: 0.5em 1.5em 0.5em 1.5em;
+}
+
+.action:hover {
+  background-color: #ed6e12;
+}
+
+.action:focus {
+  outline: none !important;
+}
+
+.action:disabled,
+.action[disabled]{
+  background-color: #d1cfcb;
+}
+
+.loading-text {
+  color: #c67e4a;
+  font-family: 'Lato', serif;
+  font-size: 1.25em;
+  font-weight: normal;
+}

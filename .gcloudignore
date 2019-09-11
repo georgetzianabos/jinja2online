@@ -1,0 +1,9 @@
+.gcloudignore
+.git
+.gitignore
+__pycache__/
+/setup.cfg
+ENV
+__pycache__
+node_modules
+ui
