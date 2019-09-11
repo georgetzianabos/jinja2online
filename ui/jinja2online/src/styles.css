@@ -79,9 +79,35 @@ body {
   background-color: #d1cfcb;
 }
 
+.icon {
+  fill: rgba(255, 255, 255, 0.95);
+}
+
 .loading-text {
   color: #c67e4a;
   font-family: 'Lato', serif;
   font-size: 1.25em;
   font-weight: normal;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.center {
+  justify-content: center;
+}
+
+.end {
+  justify-content: flex-end;
+}
+
+.grow {
+  flex: 1 1 100%
 }
