@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono|Crete+Round|Lato&display=swap");
 
+@import "~codemirror/lib/codemirror";
+
 body {
   background-color: #eeeae4;
 }
@@ -38,22 +40,9 @@ body {
 }
 
 .output pre {
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 1.0rem;
-  line-height: 1.2em;
   margin: 0;
-}
-
-.editor {
-  font-family: 'Ubuntu Mono', monospace;
-  font-size: 1.0rem;
-  line-height: 1.2em;
-  resize: none;
-}
-
-.editor:focus {
-  outline: none !important;
-  box-shadow: 0 0 0 0.125em #faa364;
+  font-family: monospace;
+  font-size: 13px;
 }
 
 .action {

@@ -19,11 +19,26 @@ import { JinjaResult } from '../../models/jinja_results.interface';
     <div class="row values-template">
       <div class="panel">
         <h3 class="panel-title">JSON</h3>
-        <textarea class="editor" [(ngModel)]="request.json"></textarea>
+        <ngx-codemirror
+          class="editor"
+          [(ngModel)]="request.json" 
+          [options]="{
+            lineNumbers: true,
+            mode: 'javascript',
+            json: true
+          }"
+        ></ngx-codemirror>
       </div>
       <div class="panel">
         <h3 class="panel-title">Template</h3>
-        <textarea class="editor" [(ngModel)]="request.template"></textarea>
+        <ngx-codemirror
+          class="editor"
+          [(ngModel)]="request.template" 
+          [options]="{
+            lineNumbers: true,
+            mode: 'jinja2'
+          }"
+        ></ngx-codemirror>
       </div>
       <div class="panel">
         <h3 class="panel-title">Output</h3>

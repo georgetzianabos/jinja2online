@@ -4,13 +4,18 @@ import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
+import 'codemirror/mode/javascript/javascript';
+import 'codemirror/mode/jinja2/jinja2';
+
+import { CodemirrorModule } from '@ctrl/ngx-codemirror';
+
 import { HomeDashboardComponent } from './containers/home_dashboard/home_dashboard.component';
 
 import { ExampleService } from './services/example.service';
 import { JinjaService } from './services/jinja.service';
 
 const routes: Routes = [
-    { path: '', component: HomeDashboardComponent, pathMatch: 'full' },
+  { path: '', component: HomeDashboardComponent, pathMatch: 'full' },
 ];
 
 @NgModule({
@@ -21,7 +26,8 @@ const routes: Routes = [
     CommonModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    CodemirrorModule
   ],
   providers: [
     ExampleService,
