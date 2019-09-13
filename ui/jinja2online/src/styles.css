@@ -34,15 +34,20 @@ body {
 }
 
 .editor, .output {
-  background-color: #fbfaf8;
+  background-color: #ffffff;
   border: 0.125em solid #d1cfcb;
   border-radius: 0.25em;
+}
+
+.output {
+  padding: 4px 0 0 4px;
 }
 
 .output pre {
   margin: 0;
   font-family: monospace;
   font-size: 13px;
+  line-height: 14px;
 }
 
 .action {
@@ -99,4 +104,8 @@ body {
 
 .grow {
   flex: 1 1 100%
+}
+
+.CodeMirror {
+  height: 100%;
 }
